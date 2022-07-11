@@ -1,0 +1,68 @@
+#tela {  background-image: url("gif/fundo4.gif");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed; /*fixar imagem de acordo com o tamanho da página*/ 
+   /*padding: 10px 10px 10px 10px;*/
+   background-size: cover;
+   margin: 30px 60px 60px 60px;
+   padding: 10px 10px 10px 10px;
+        } 
+
+#carro{
+  padding: 70px 100px 0px 70px;
+   width: 45%;
+
+}   
+#carro2 {
+padding-left: 140px;
+
+
+}
+#menu {
+   position: 0px;
+}
+
+
+#card{ 
+   padding: 200px 20px 0px 0px  ;
+
+}
+
+
+p{
+   text-align: justify;
+   font-size:  0.975em;
+   padding-left: 15px;
+   
+}
+
+h1{text-align: center;
+
+   font-size: 60px;
+   padding-top: 20px;
+
+}
+h2{text-align: center;
+   padding-top: 20px;
+   padding-bottom: 40px;
+   font-size: 15px;
+}
+
+#estrelas{
+   padding: 60px 0px 0px 0px ;
+
+}
+
+#text{
+   padding: 60px 0px 0px 0px ;
+}
+#curio{padding-top: 80px;
+
+}
+
+
+#textos{
+   text-shadow: 0em 0em 1.8em rgb(241, 238, 240);
+
+}
+

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title> Os Planetas</title>
+    <style type="text/css"> </style>
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen">
+    <!--  <link rel="stylesheet" type="text/css" href="index.css">  </link> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+</head>
+
+
+<body id="tela">
+
+
+
+
+    <!-- MENU -->
+
+    <div id="menu">
+        <nav class="navbar navbar-expand-lg navbar-light" style="border-radius: 10px ; background-color: #DFCCF2;">
+            <!-- navebar = cor -->
+
+            <div class="container">
+                <!-- mantém o menu mais junto -->
+
+                <a href="index.html"><img src="img/logo.png" width="60"><a class="navbar-brand"> </a></img>
+                    <!-- logo -->
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="container">
+
+                        <ul class="navbar-nav mr-auto" style="padding-left: 205px;">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html"><button class="btn btn-outline-secondary"
+                                        type="button">Início</button> <span class="sr-only"></span></a>
+                            </li>
+
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="OsPlanetas.html"><button class="btn btn-outline-secondary"
+                                            type="button">Os Planetas</button> <span class="sr-only"></span></a>
+                                </li>
+                                <li class="nav-item mr-auto ">
+                                    <a class="nav-link" href="estrelas.html"><button class="btn btn-outline-secondary"
+                                            type="button">Estrelas e Constelações</button> <span
+                                            class="sr-only"></span></a>
+                                </li>
+                                <li class="nav-item mr-auto ">
+                                    <a class="nav-link" href="sol.html"><button class="btn btn-outline-secondary"
+                                            type="button">O
+                                            sol</button>
+                                        <span class="sr-only"></span></a>
+                                </li>
+                                <li class="nav-item ml-auto ">
+                                    <a class="nav-link" href="via.html"><button class="btn btn-outline-secondary"
+                                            type="button">A Via
+                                            Lactea</button> <span class="sr-only"></span></a>
+                                </li>
+                                <li class="nav-item mr-auto ">
+                                    <a class="nav-link" href="curiosidades.html"><button
+                                            class="btn btn-outline-secondary" type="button">Cudiosidades</button> <span
+                                            class="sr-only"></span></a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+
+    </div>
+
+
+
+    <!-- LISTAS -->
+
+    <div class="container">
+
+        <div id="textos">
+            <h1 style="color: rgb(243, 240, 240)">Os Planetas </h1>
+
+            <h2 style="color: rgb(254, 250, 250)">O Sistema Solar é composto por oito planetas, sendo:</h2>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                            href="#list-mercurio" role="tab" aria-controls="home">Mercúrio</a>
+
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                            href="#list-venus" role="tab" aria-controls="profile">Vênus</a>
+
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                            href="#list-terra" role="tab" aria-controls="messages">Terra</a>
+
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                            href="#list-marte" role="tab" aria-controls="settings">Marte</a>
+
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                            href="#list-jupiter" role="tab" aria-controls="settings">Júpiter</a>
+
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                            href="#list-saturno" role="tab" aria-controls="settings">Saturno</a>
+
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                            href="#list-Urano" role="tab" aria-controls="settings">Urano</a>
+
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                            href="#list-netuno" role="tab" aria-controls="settings">Netuno</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active        p-3 mb-2 bg-white text-dark" id="list-mercurio"
+                            role="tabpanel" aria-labelledby="list-home-list">
+
+                            <div class="container">
+
+                                <div class="row">
+
+                                    <div class="col-3">
+
+                                        <img src="gif/mercurio1.gif" style=" width: 150px; height: 145px;">
+                                    </div>
+                                    <div class="col-9">
+                                        <p>
+                                            É o planeta que se encontra mais próximo ao Sol, sendo o menor planeta
+                                            do Sistema Solar atualmente. A possibilidade de existência de vida neste
+                                            planeta é baixa, levando em conta as instabilidades climáticas, atmosfera
+                                            “fraca”, tornando o planeta suscetível a meteotos, bem como superfície
+                                            escura, supostamente em virtude da presença de grafite ou pelas altas
+                                            temperaturas, que “carbonizam” as paisagens."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show      p-3 mb-2 bg-white text-dark" id="list-venus" role="tabpanel"
+                            aria-labelledby="list-profile-list">
+                            <div class="container">
+
+                                <div class="row">
+
+                                    <div class="col-3">
+
+                                        <img src="gif/venus.gif" style=" width: 150px; height: 145px;">
+                                    </div>
+                                    <div class="col-9">
+                                        <p>
+                                            Vênus, também conhecido como Estrela Dalva, é o segundo planeta em relação
+                                            ao
+                                            Sol, estando, aproximadamente, a 108.200.000 km de distância. É um planeta
+                                            de
+                                            fácil visibilidade, antes do nascer ou depois do pôr do Sol, a olho nu. Suas
+                                            características assemelham-se às da Terra, especialmente a massa,
+                                            diâmetro e a gravidade. Outra semelhança com o nosso planeta encontra-se na
+                                            atmosfera, composta por gás carbônico, nitrogênio e vapor d'água. É
+                                            constituído
+                                            de silicatos e basaltos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade             p-3 mb-2 bg-white text-dark" id="list-terra"
+                            role="tabpanel" aria-labelledby="list-messages-list">
+                            <div class="container">
+
+                                <div class="row">
+
+                                    <div class="col-3">
+
+                                        <img src="gif/terra.gif" style=" width: 150px; height: 145px;" position="center">
+                                    </div>
+                                    <div class="col-9">
+                                        <p>
+                                            Terra é o terceiro planeta na ordem de proximidade com o Sol, encontrando-se
+                                            a
+                                            149.600.000 km de distância desse. É o planeta que apresenta condições
+                                            favoráveis à existência de vida. Sua atmosfera é composta por nitrogênio,
+                                            oxigênio, vapor d'água e outros gases em menor quantidade. Possui
+                                            temperatura
+                                            média de 14ºC. É constituído por silicatos e basaltos,
+                                            e sua estrutura interna divide-se em núcleo, manto e crosta terrestre. O
+                                            planeta
+                                            possui apenas um satélite natural, a Lua, que se encontra a cerca de 384.400
+                                            km
+                                            de distância dele.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade              p-3 mb-2 bg-white text-dark" id="list-marte"
+                            role="tabpanel" aria-labelledby="list-settings-list">
+                            <div class="container">
+
+                                <div class="row">
+
+                                    <div class="col-3">
+
+                                        <img src="gif/marte.gif" style=" width: 150px; height: 145px;">
+                                    </div>
+                                    <div class="col-9">
+                                        <p>
+                                            Marte, também chamado de Planeta Vermelho, é o quarto planeta na ordem em
+                                            relação ao Sol, estando a, aproximadamente, 227.940.000 km de distância
+                                            dele. É
+                                            um dos planetas que também apresentam condições de ser visto a olho nu. É
+                                            constituído por silicatos e basaltos,
+                                            e sua atmosfera é composta basicamente por gás carbônico, nitrogênio e
+                                            alguns
+                                            vestígios de oxigênio, monóxido de carbono e vapor d'água.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade         p-3 mb-2 bg-white text-dark" id="list-jupiter" role="tabpanel"
+                            aria-labelledby="list-settings-list">
+                            <div class="container">
+
+                                <div class="row">
+
+                                    <div class="col-3">
+
+                                        <img src="gif/jupter.gif"
+                                        style=" width: 154px; height: 145px;" >
+                                    </div>
+                                    <div class="col-9">
+                                        <p>Júpiter é o maior planeta do Sistema Solar possuindo uma massa 318 vezes
+                                            maior
+                                            que a da Terra. Diferente dos quatro planetas mais próximos ao Sol, Júpiter
+                                            é
+                                            constituído de gases como hidrogênio, hélio, metano, amônia e vestígios de
+                                            vapor
+                                            d'água. O planeta encontra-se a, aproximadamente, 778.330.000 km do Sol, e é
+                                            conhecido como o Gigante Gasoso.
+                                            A temperatura em sua superfície é muito baixa, chegando -100ºC. Júpiter é
+                                            formado por anéis constituídos de poeira fina e possui 16 satélites
+                                            naturais.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade    p-3 mb-2 bg-white text-dark" id="list-saturno" role="tabpanel"
+                            aria-labelledby="list-settings-list">
+                            <div class="container">
+
+                                <div class="row">
+
+                                    <div class="col-3">
+
+                                        <img src="gif/saturno.gif" style=" width: 150px; height: 145px;">
+                                    </div>
+                                    <div class="col-9">
+                                        <p>
+                                            Saturno encontra-se a, aproximadamente, 1.429.400.000 km do Sol e é o
+                                            segundo
+                                            maior planeta do Sistema Solar. Sua composição assemelha-se à de Júpiter:
+                                            hidrogênio, hélio, metano, amônia e vestígios de vapor d'água.
+                                            A temperatura em Saturno pode chegar a -140ºC. Esse planeta é muito
+                                            conhecido
+                                            pelos seus anéis, compostos por gelo, que refletem até 80% da radiação
+                                            solar.
+                                            Saturno possui 18 satélites naturais, sendo o maior deles conhecido como
+                                            Titã.
+                                            Principais luas de saturno:
+                                            • Encélado
+                                            • Titã
+                                            • Mimas
+                                            • Reia
+                                            • Jápeto
+                                            • Dione
+                                            • Tétis
+                                            • Febe
+                                            • Epimeteu
+                                            • Pandora
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade       p-3 mb-2 bg-white text-dark" id="list-Urano" role="tabpanel"
+                            aria-labelledby="list-settings-list">
+                            <div class="container">
+
+                                <div class="row">
+
+                                    <div class="col-3">
+
+                                        <img src="gif/urano.gif" style=" width: 150px; height: 145px;">
+                                    </div>
+                                    <div class="col-9">
+                                        <p>
+                                            Urano, um dos planetas gasosos, é o terceiro maior planeta do Sistema Solar,
+                                            estando a, aproximadamente, 2.880.990.000 km do Sol.
+                                            Suas características assemelham-se às de Júpiter e Saturno. É constituído
+                                            por
+                                            gases como hidrogênio, hélio e metano, que lhe confere a cor
+                                            azulada. A temperatura no planeta pode chegar a -200ºC. O planeta possui um
+                                            sistema de anéis, descoberto em 1977, e possui cerca de 27
+                                            satélites naturais. O planeta possui também, aproximadamente, 27 luas.
+                                            Principais luas:
+                                            • Titânia
+                                            • Oberon
+                                            • Umbriel
+                                            • Miranda
+                                            • Ariel
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade     p-3 mb-2 bg-white text-dark" id="list-netuno" role="tabpanel"
+                            aria-labelledby="list-settings-list">
+                            <div class="container">
+
+                                <div class="row">
+
+                                    <div class="col-3">
+
+                                        <img src="gif/netuno.gif" style=" width: 150px; height: 145px;">
+                                    </div>
+                                    <div class="col-9">
+                                        <p>
+                                            Netuno foi descoberto em 1845 e não pode ser visto a olho nu. É o último
+                                            planeta
+                                            do Sistema Solar em relação ao Sol, estando a
+                                            cerca de 4.504.300.000 km de distância desse. Sua composição assemelha-se a
+                                            dos
+                                            demais planetas gasosos, sendo constituído por gases
+                                            como o hidrogênio, hélio, e metano. A temperatura no planeta é extremamente
+                                            baixa, chegando a -218ºC. O planeta possui cerca de 13 satélites
+                                            naturais e também apresenta um sistema de anéis. Principais satélites:
+                                            • Naiad
+                                            • Thalassa
+                                            • Despina
+                                            • Galatea
+                                            • Larissa
+                                            • Proteus
+                                            • Tritão
+                                            • Nereida
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
